@@ -3,7 +3,8 @@
   document.cookie = "favorite_task=collect Data"; 
   function alertCookie() { alert(document.cookie); } </script>
 <body> Bine ai venit la lab <button onclick="alertCookie()">Show cookies</button> </body>
-
+allCookies = document.cookie;
+document.cookie = newCookie;
 // Note that we are setting `SameSite=None;` in this example because the example
 // needs to work cross-origin.
 // It is more common not to set the `SameSite` attribute, which results in the default,
