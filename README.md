@@ -2,10 +2,7 @@
 <script> document.cookie = "session=test GDPR"; 
   document.cookie = "favorite_task=collect Data"; 
   function alertCookie() { alert(document.cookie); } 
-// Note that we are setting `SameSite=None;` in this example because the example
-// needs to work cross-origin.
-// It is more common not to set the `SameSite` attribute, which results in the default,
-// and more secure, value of `SameSite=Lax;`
+
 document.cookie = "name=oeschger; SameSite=None; Secure";
 document.cookie = "favorite_food=tripe; SameSite=None; Secure";
 
@@ -21,11 +18,9 @@ function clearOutputCookies() {
 </script>
 <body> Bine ai venit la lab <button onclick="alertCookie()">Show cookies</button>
 <button onclick="showCookies()">Show cookies</button>
-
 <button onclick="clearOutputCookies()">
   Clear
 </button>
-
 <div>
   <code id="cookies"></code>
 </div>
